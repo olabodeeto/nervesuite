@@ -121,11 +121,14 @@ export function Features() {
                   className={cn(
                     "mb-6 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-0.5",
                     a.ring,
-                    a.glow
+                    a.glow,
                   )}
                 >
                   <f.icon
-                    className={cn("h-5 w-5 transition-transform duration-300 group-hover:scale-110", a.icon)}
+                    className={cn(
+                      "h-5 w-5 transition-transform duration-300 group-hover:scale-110",
+                      a.icon,
+                    )}
                     strokeWidth={1.5}
                   />
                 </div>

@@ -16,7 +16,11 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.2, 0.8, 0.2, 1] as const } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
 };
 
 export function Hero() {
@@ -57,7 +61,7 @@ export function Hero() {
           className="mt-6 max-w-2xl text-base text-foreground/65 md:text-lg"
         >
           NerveEHR is a unified electronic health record that connects patients,
-          clinicians, labs, pharmacy, and billing — so every decision happens on
+          clinicians, labs, pharmacy, and billing so every decision happens on
           one chart, with full context, in real time.
         </motion.p>
 

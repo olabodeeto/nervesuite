@@ -21,7 +21,11 @@ const toneClass: Record<string, string> = {
 
 const lineVariants = {
   hidden: { opacity: 0, x: -8 },
-  show: { opacity: 1, x: 0, transition: { duration: 0.35, ease: [0.2, 0.8, 0.2, 1] as const } },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.35, ease: [0.2, 0.8, 0.2, 1] as const },
+  },
 };
 
 export function Showcase() {
@@ -37,8 +41,8 @@ export function Showcase() {
           </h2>
           <p className="mt-5 max-w-md text-foreground/60">
             Clinicians, admins, and billers work from a single patient-centered
-            workspace. No more chart-hunting across five systems — context
-            follows the patient, not the tab.
+            workspace. No more chart-hunting across five systems context follows
+            the patient, not the tab.
           </p>
           <dl className="mt-10 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
             {[
@@ -47,11 +51,16 @@ export function Showcase() {
               { k: "Departments connected", v: "18+", icon: Building2 },
             ].map((s) => (
               <div key={s.k}>
-                <s.icon className="mb-3 h-4 w-4 text-foreground/40" strokeWidth={1.5} />
+                <s.icon
+                  className="mb-3 h-4 w-4 text-foreground/40"
+                  strokeWidth={1.5}
+                />
                 <dt className="font-mono text-[10px] uppercase tracking-widest text-foreground/40">
                   {s.k}
                 </dt>
-                <dd className="mt-1 text-2xl font-medium text-foreground">{s.v}</dd>
+                <dd className="mt-1 text-2xl font-medium text-foreground">
+                  {s.v}
+                </dd>
               </div>
             ))}
           </dl>
