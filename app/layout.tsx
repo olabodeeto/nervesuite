@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Work_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const sans = Space_Grotesk({
+const sans = Work_Sans({
   variable: "--font-sans-var",
   subsets: ["latin"],
   display: "swap",
